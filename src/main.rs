@@ -39,7 +39,7 @@ fn main() {
                     forks[higher] = false;
                 }
 
-                println!("Philosopher {} is thinking", i);
+                println!("Philosopher {} finished eating and is now thinking", i);
                 thread::sleep(std::time::Duration::from_secs(1));
             }
         }));
